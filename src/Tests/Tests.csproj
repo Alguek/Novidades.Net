@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\csharp10\csharp10\csharp10.csproj" />
-    <ProjectReference Include="..\..\csharp9\csharp9.csproj" />
+    <ProjectReference Include="..\csharp10\csharp10.csproj" />
+    <ProjectReference Include="..\csharp9\csharp09.csproj" />
   </ItemGroup>
 
   <ItemGroup>
