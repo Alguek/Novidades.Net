@@ -1,4 +1,4 @@
-﻿using csharp9.Init_only_properties;
+﻿using csharp9;
 
 namespace Csharp9_Tests
 {

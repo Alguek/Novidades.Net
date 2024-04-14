@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp9.Init_only_properties
+namespace csharp9
 {
     public class PessoaAntiga
     {

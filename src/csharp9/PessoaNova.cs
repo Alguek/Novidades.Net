@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp9.Init_only_properties
+namespace csharp9
 {
     /// <summary>
     /// o "data" foi substituido pelo "record" nas versoes novas do c# e como o visual studio esta atualizado ele nao reconhece mais o "data"

@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "src\Tests\Tests.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp10", "src\csharp10\csharp10.csproj", "{372F7348-1AFC-42C2-A17B-1C05D94ABA00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp11", "src\csharp11\csharp11.csproj", "{E184156D-CFB7-4336-8111-2F2CD15D05DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp11", "src\csharp11\csharp11.csproj", "{E184156D-CFB7-4336-8111-2F2CD15D05DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp12", "csharp12\csharp12.csproj", "{5943E6A8-A139-4C40-92C0-0DFDCF5BB09E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp12", "csharp12\csharp12.csproj", "{5943E6A8-A139-4C40-92C0-0DFDCF5BB09E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
