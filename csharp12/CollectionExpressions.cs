@@ -32,6 +32,10 @@ namespace csharp12
             int[][] twoDFromVariables = [row0, row1, row2];
 
             List<int> ints = [];
+
+            int[] numbers1 = [1, 2, 3];
+            int[] numbers2 = [4, 5, 6];
+            int[] moreNumbers = [.. numbers1, .. numbers2, 7, 8, 9];
         }
     }
 }
