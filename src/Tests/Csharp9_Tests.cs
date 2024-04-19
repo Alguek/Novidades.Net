@@ -1,4 +1,4 @@
-﻿using csharp9;
+﻿using csharp09;
 
 namespace Csharp9_Tests
 {
@@ -12,7 +12,7 @@ namespace Csharp9_Tests
         {
             //Error
             //var pessoaAntes = new PessoaAntes();
-            var pessoaAntes = new PessoaAntiga("Jonh", "Cena");
+            var pessoaAntes = new Antes("Jonh", "Cena");
 
             Assert.Equal("Jonh", pessoaAntes.Nome);
             Assert.Equal("Cena", pessoaAntes.Sobrenome);
@@ -21,7 +21,7 @@ namespace Csharp9_Tests
         [Fact]
         public void InicializarPessoaDepois()
         {
-            var pessoaDepois = new PessoaNova()
+            var pessoaDepois = new Depois()
             {
                 Nome = "Jonh",
                 Sobrenome = "Cena"
@@ -43,7 +43,7 @@ namespace Csharp9_Tests
         [Fact]
         public void InicializarPessoaDepoisNew()
         {
-            PessoaNova pessoaDepois = new()
+            Depois pessoaDepois = new()
             {
                 Nome = "Jonh",
                 Sobrenome = "Cena"
@@ -61,7 +61,7 @@ namespace Csharp9_Tests
         [Fact]
         public void InicializarPessoaDepoisWith()
         {
-            PessoaNova pessoaDepois1 = new()
+            Depois pessoaDepois1 = new()
             {
                 Nome = "Jared",
                 Sobrenome = "Leto",
@@ -84,9 +84,9 @@ namespace Csharp9_Tests
         [Fact]
         public void DuasInstanciasComMesmoValorSemRecordDeveRetornarFalso()
         {
-            PessoaAntiga pessoaAntes1 = new("Jared", "Leto");
+            Antes pessoaAntes1 = new("Jared", "Leto");
 
-            PessoaAntiga pessoaAntes2 = new("Jared", "Leto");
+            Antes pessoaAntes2 = new("Jared", "Leto");
 
             Assert.False(pessoaAntes1.Equals(pessoaAntes2));
         }
@@ -99,14 +99,14 @@ namespace Csharp9_Tests
         [Fact]
         public void DuasInstanciasComMesmoValorComRecordDeveRetornarVerdadeiro()
         {
-            PessoaNova pessoaDepois1 = new()
+            Depois pessoaDepois1 = new()
             {
                 Nome = "Jared",
                 Sobrenome = "Leto",
                 AnoNascimento = 1971
             };
 
-            PessoaNova pessoaDepois2 = new()
+            Depois pessoaDepois2 = new()
             {
                 Nome = "Jared",
                 Sobrenome = "Leto",
@@ -119,14 +119,14 @@ namespace Csharp9_Tests
         [Fact]
         public void EqualsPessoaDepoisRecord2()
         {
-            PessoaNova pessoaDepois1 = new()
+            Depois pessoaDepois1 = new()
             {
                 Nome = "Jared",
                 Sobrenome = "Leto",
                 AnoNascimento = 1971
             };
 
-            PessoaNova pessoaDepois2 = new()
+            Depois pessoaDepois2 = new()
             {
                 Nome = "Luciano",
                 Sobrenome = "Hulk",
@@ -139,8 +139,8 @@ namespace Csharp9_Tests
         [Fact]
         public void InicializarPessoaDepois2_positionalRecord()
         {
-            PessoaNovaConstrucao pessoaDepois2 = new("Jared", "Leto"); // positional construction
-            var (nome, sobrenome) = pessoaDepois2;              // positional deconstruction
+            Depois2 pessoaDepois2 = new("Jared", "Leto", 1204); // positional construction
+            var (nome, sobrenome, idade) = pessoaDepois2;       // positional deconstruction
 
             Assert.Equal("Jared", pessoaDepois2.Nome);
             Assert.Equal("Leto", pessoaDepois2.Sobrenome);
@@ -155,7 +155,7 @@ namespace Csharp9_Tests
         [Fact]
         public void IsNot()
         {
-            PessoaNova pessoaDepois = new();
+            Depois pessoaDepois = new();
 
             // Antes
             if (!(pessoaDepois is null))
